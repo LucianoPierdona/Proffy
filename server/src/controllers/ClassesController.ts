@@ -36,9 +36,9 @@ export default class ClassesController {
                 })
             .where('classes.subject', '=', subject)
             .join('users', 'classes.user_id', '=', 'users.id')
-            .select(['classes.*', 'users*']);
+            .select(['classes.*', 'users.*']);
 
-        return response.send();
+        return res.json(classes);
     
     }
     
