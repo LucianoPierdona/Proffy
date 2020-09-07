@@ -38,9 +38,9 @@ function TeacherList() {
     const [subject, setSubject] = useState('');
     const [week_day, setWeekDay] = useState('');
     const [time, setTime] = useState('');
-
+    console.log(week_day);
     async function handleFiltersSubmit() {
-        loadFavorites()
+        loadFavorites();
         const response = await api.get('classes', {
             params: {
                 subject,
@@ -48,7 +48,7 @@ function TeacherList() {
                 time,
             }
         });
-
+        console.log(response.data);
         setIsFiltersVisible(false);
         setTeachers(response.data);
     }
@@ -82,7 +82,7 @@ function TeacherList() {
                                 value={week_day}
                                 onChangeText={text => setWeekDay(text)}
                                 placeholder="Qual o Dia?"
-                                placeholderTextColor="#c1bcc"
+                                placeholderTextColor="#c1bccc"
                             />
                         </View>
                         <View style={styles.inputBlock}>
@@ -92,7 +92,7 @@ function TeacherList() {
                                 value={time}
                                 onChangeText={text => setTime(text)}
                                 placeholder="Qual o Horário?"
-                                placeholderTextColor="#c1bcc"
+                                placeholderTextColor="#c1bccc"
                             />
                         </View>
                     </View>
