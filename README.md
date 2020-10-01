@@ -41,6 +41,5 @@ yarn start
 
 ![Background](https://github.com/LucianoPierdona/Proffy/blob/master/mobile/assets/readme2.jpeg)
 ![Background](https://github.com/LucianoPierdona/Proffy/blob/master/mobile/assets/readme3.jpeg)
-![Background](https://github.com/LucianoPierdona/Proffy/blob/master/mobile/assets/readme1.jpeg)
-
+<img src="https://github.com/LucianoPierdona/Proffy/blob/master/mobile/assets/readme1.jpeg" width="540px" height="1200px">
 
